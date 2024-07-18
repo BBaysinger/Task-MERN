@@ -49,9 +49,7 @@ const deleteTask = asyncHandler(async (req, res) => {
         throw new Error('Task not found.');
     }
 
-    console.log(2345);
     const user = await User.findById(req.user.id);
-    console.log(8342);
 
     if (!user) {
         res.status(401);
