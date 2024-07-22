@@ -19,7 +19,6 @@ const Register = () => {
     if (isError) toast.error(message);
     if (isSuccess || user) navigate('/');
     dispatch(reset());
-
   }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   const onChange = e => {
