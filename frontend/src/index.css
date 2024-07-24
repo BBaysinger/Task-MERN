@@ -209,3 +209,24 @@ h3 {
     font-size: 1.5rem;
   }
 }
+
+/************** This wasn't in the book... **************/
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tasks .task {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 20px;
+  flex: 1;
+  flex-basis: calc(50% - 5px);
+  max-width: calc(50% - 5px);
+}
+
+.tasks .task h2 {
+  margin-bottom: 0px;
+}

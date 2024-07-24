@@ -12,14 +12,16 @@ const TaskForm = () => {
     e.preventDefault();
     dispatch(createTask({ text }));
     setText("");
-    navigate('/allTasks');
+    navigate("/allTasks");
   };
 
   return (
     <section className="form">
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="text">Task</label>
+          <label htmlFor="text" style={{ fontWeight: "bolder" }}>
+            Task
+          </label>
           <input
             type="text"
             id="text"
