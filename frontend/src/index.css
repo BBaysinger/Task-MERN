@@ -176,6 +176,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .loadingSpinner {
@@ -219,6 +220,7 @@ h3 {
 }
 
 .tasks .task {
+  position: relative;
   background-color: #f4f4f4;
   border-radius: 4px;
   padding: 20px;
@@ -229,4 +231,17 @@ h3 {
 
 .tasks .task h2 {
   margin-bottom: 0px;
+}
+
+.tasks .task button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #999;
+  color: white;
+  padding: 4px 4px 6px 4px;
+  line-height: 4px;
+  border-radius: 2px;
 }

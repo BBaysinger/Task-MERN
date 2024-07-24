@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "/api/tasks";
+const API_URL = "/api/tasks/";
 
 const createTask = async (taskData, token) => {
   const config = {
@@ -26,6 +26,16 @@ const getTasks = async (token) => {
   return response.data;
 };
 
-const taskService = { createTask, getTasks };
+const deleteTask = async (id, token) => {
+  const config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+  const response = await axios.delete(API_URL + id, config);
+  return response.data;
+};
+
+const taskService = { createTask, getTasks, deleteTask };
 
 export default taskService;
