@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap');
+@import url("http://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -28,7 +28,9 @@ li {
   line-height: 2.2;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -106,7 +108,8 @@ h1, h2, h3 {
   background: none;
 }
 
-.form, .content {
+.form,
+.content {
   width: 70%;
   margin: 0 auto;
 }
@@ -168,7 +171,7 @@ h1, h2, h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 5000;
   display: flex;
   justify-content: center;
@@ -197,7 +200,7 @@ h1, h2, h3 {
   .form {
     width: 90%;
   }
-  
+
   .heading h1 {
     font-size: 2rem;
   }
@@ -206,4 +209,3 @@ h1, h2, h3 {
     font-size: 1.5rem;
   }
 }
-
