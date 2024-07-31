@@ -213,6 +213,10 @@ h3 {
 
 /************** This wasn't in the book... **************/
 
+.logo {
+  font-size: 30px;
+}
+
 .tasks {
   display: flex;
   flex-wrap: wrap;
