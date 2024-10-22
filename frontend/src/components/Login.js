@@ -43,29 +43,29 @@ const Login = () => {
         <h1>
           <FaSignInAlt /> Login
         </h1>
-        <p>Login and start creating tasks.</p>
+        <p>Login and start creating tasks</p>
       </section>
       <section className="form">
         <form onSubmit={onSubmit}>
           <div className="form-group">
             <input
-              type="text"
+              type="email"
               className="form-control"
               id="email"
               name="email"
               value={email}
-              placeholder="Enter your email."
+              placeholder="Enter your email"
               onChange={onChange}
             />
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="password"
               className="form-control"
               id="password"
               name="password"
               value={password}
-              placeholder="Enter your password."
+              placeholder="Enter password"
               onChange={onChange}
             />
           </div>

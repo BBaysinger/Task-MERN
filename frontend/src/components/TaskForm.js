@@ -12,7 +12,7 @@ const TaskForm = () => {
     e.preventDefault();
     dispatch(createTask({ text }));
     setText("");
-    navigate("/allTasks");
+    navigate("/alltasks");
   };
 
   return (
@@ -20,7 +20,7 @@ const TaskForm = () => {
       <form onSubmit={onSubmit}>
         <div className="form-group">
           <label htmlFor="text" style={{ fontWeight: "bolder" }}>
-            Task
+            Enter Task
           </label>
           <input
             type="text"

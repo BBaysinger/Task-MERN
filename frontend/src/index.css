@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Karla, sans-serif;
+  font-family: "Karla", sans-serif;
   height: 100vh;
 }
 
@@ -86,20 +86,20 @@ h3 {
   color: #828282;
 }
 
-.goals {
+.tasks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-.goal {
+.task {
   background-color: #f4f4f4;
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
 }
 
-.goal .close {
+.task .close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -112,6 +112,10 @@ h3 {
 .content {
   width: 70%;
   margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
 }
 
 .form-group input,
@@ -208,43 +212,4 @@ h3 {
   .heading p {
     font-size: 1.5rem;
   }
-}
-
-/************** This wasn't in the book... **************/
-
-.logo {
-  font-size: 30px;
-}
-
-.tasks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tasks .task {
-  position: relative;
-  background-color: #f4f4f4;
-  border-radius: 4px;
-  padding: 20px;
-  flex: 1;
-  flex-basis: calc(50% - 5px);
-  max-width: calc(50% - 5px);
-}
-
-.tasks .task h2 {
-  margin-bottom: 0px;
-}
-
-.tasks .task button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-  border: none;
-  background-color: #999;
-  color: white;
-  padding: 4px 4px 6px 4px;
-  line-height: 4px;
-  border-radius: 2px;
 }

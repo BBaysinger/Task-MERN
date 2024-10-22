@@ -17,7 +17,9 @@ export const createTask = createAsyncThunk(
       return await taskService.createTask(taskData, token);
     } catch (error) {
       const message =
-        (error.response && error.response.data && error.reponse.data.message) ||
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
         error.message ||
         error.toString();
       return thunkAPI.rejectWithValue(message);
@@ -74,7 +76,7 @@ export const taskSlice = createSlice({
       })
       .addCase(createTask.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.isError = true;
+        state.isSuccess = true;
         state.tasks.push(action.payload);
       })
       .addCase(createTask.rejected, (state, action) => {

@@ -38,7 +38,7 @@ const Register = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (password !== password2) {
-      toast.error("Passwords are different.");
+      toast.error("Passwords are different");
     } else {
       const userData = { name, email, password };
       dispatch(register(userData));
@@ -53,7 +53,7 @@ const Register = () => {
         <h1>
           <FaUser /> Register
         </h1>
-        <p>Please create an account.</p>
+        <p>Please create an account</p>
       </section>
       <section className="form">
         <form onSubmit={onSubmit}>
@@ -70,7 +70,7 @@ const Register = () => {
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="email"
               className="form-control"
               id="email"
               name="email"
@@ -86,7 +86,7 @@ const Register = () => {
               id="password"
               name="password"
               value={password}
-              placeholder="Enter your password"
+              placeholder="Enter password"
               onChange={onChange}
             />
           </div>
@@ -97,7 +97,7 @@ const Register = () => {
               id="password2"
               name="password2"
               value={password2}
-              placeholder="Enter your password"
+              placeholder="Confirm password"
               onChange={onChange}
             />
           </div>
